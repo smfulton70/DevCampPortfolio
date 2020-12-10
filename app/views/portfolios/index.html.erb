@@ -1,0 +1,10 @@
+<h1>Portfolio Items</h1>
+
+<% @portfolio_items.each do |pi| %>
+  <%= pi.title %><br />
+  <%= pi.subtitle %><br />
+  <%= pi.body %><br/>
+  <%= image_tag pi.thumb_image %><br />
+  <img src = "<%= pi.thumb_image %>" /><br />
+
+<% end %>

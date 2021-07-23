@@ -4,7 +4,5 @@
   <%= pi.title %><br />
   <%= pi.subtitle %><br />
   <%= pi.body %><br/>
-  <%= image_tag pi.thumb_image %><br />
-  <img src = "<%= pi.thumb_image %>" /><br />
-
+  <%= image_tag pi.thumb_image if !pi.thumb_image.nil? %><br />
 <% end %>
